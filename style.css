@@ -1,6 +1,5 @@
 ﻿body {
- text-align: left;
- background: #101010;
+text-align: left;
 color: #97C7FB;
 }
 
@@ -9,23 +8,65 @@ text-shadow: 4px 4px #6F9FD399;
 font-size: 45px;
 }
 h2 {
-color: #FFFFFF ; text-shadow: 2px 2px #69696999; font-size: 30px;
+color: #FFFFFF;
+text-shadow: 2px 2px #69696999;
+font-size: 30px;
 }
 h3 {
-color: #FFFFFF ;  font-size: 24px;
+color: #FFFFFF;
+font-size: 32px;
+text-shadow: 2px 2px #696969;
 }
 h4 {
-color: #FFFFFF ; font-size: 16px;
+color: #FFFFFF;
+font-size: 20px;
+text-shadow: 2px 2px #696969;
 }
 p {
-color: #FFFFFF ; text-shadow: 2px 2px #69696999;
+color: #FFFFFF;
+text-shadow: 2px 2px #69696999;
 }
 a {
-	  text-decoration: none;
-color: #FFFFFF ; text-shadow: 0px 0px #69696999;
+text-decoration: none;
+color: #FFFFFF;
+text-shadow: 3px 3px #69696999;
 }
 
-ul {
+.biggersize {
+  font-size: 24px;
+}
+
+.bottombar-container {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.overlay-bgv {
+  position: absolute;
+  z-index: 999;
+}
+
+
+#bg-video {
+display: block;
+width: 100vw;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+object-fit: cover;
+z-index: 1;
+}
+
+.topbar_ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,25 +74,36 @@ ul {
   background-color: #333;
 }
 
-li {
+.topbar_li {
   float: left;
+  font-size: 16px;
 }
 
-li a {
+.topbar{
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.topbar:hover {
   background-color: #111;
 }
 
-table { 
-background-color: black; 
-border-color: black;
+.centergirl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  z-index: 2;
+}
+
+.ltr_girl{
+object-position: center;
+z-index: 1;
+max-height: 48vh;
+margin-bottom: 0px;
 }
 
 hr {
